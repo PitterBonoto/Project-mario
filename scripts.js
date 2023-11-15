@@ -5,9 +5,15 @@ const audioOkiDoki = document.querySelector(".audio-oki-doki")
 
 function contact() {
 
-    audioItsMe.play()
-    myForm.style.left = "500px"
-    mascaraForm.style.visibility = "visible"
+    if (window.matchMedia("(max-width:1150px)").matches) {
+        audioItsMe.play()
+        myForm.style.left = "auto"
+        mascaraForm.style.visibility = "visible"
+    } else {
+        audioItsMe.play()
+        myForm.style.left = "500px"
+        mascaraForm.style.visibility = "visible"
+    }
 }
 
 
