@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arimo', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.div-video-mario {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.video-mario {
+    position: fixed;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.mascara-video {
+    position: fixed;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+}
+
+.logo {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.mario {
+    height: 600px;
+}
+
+p {
+    width: 600px;   
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+button {
+    background-color: #c51111;
+    color: #FFFFFF;
+    font-size: 10px;
+    height: 40px;
+    width: 200px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+button:active {
+    opacity: 0.4;
+}
+
+form {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+    border-radius: 4px;
+    position: fixed;
+    left: -350px;
+    transition: left 0.5s linear;
+    z-index: 4;
+}
+
+input {
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 4px;
+    border: 1px solid gray;
+    outline-color: #c51111;
+}
+
+textarea {
+    height: 90px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid gray;
+    outline-color: #c51111;
+    
+}
+
+.mascara-form {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    z-index: 3;
+}
